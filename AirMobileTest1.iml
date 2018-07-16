@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="AirMobileTest1">
+    <configurations>
+      <configuration name="AirMobileTest1" target-platform="Mobile" pure-as="true" main-class="Main" output-file="Main.swf" output-folder="$MODULE_DIR$/out/production/AirMobileTest1">
+        <dependencies target-player="29.0">
+          <entries>
+            <entry library-id="24d34ae0-cbc1-4ec1-9a3a-d90f4f7e7258">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="2cacb5dc-b358-46dc-8ce1-c075f9bcfd11">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="29_0_0_112" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop />
+        <packaging-android use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/Main-app.xml" package-file-name="Main" />
+        <packaging-ios enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/src/AdMobANESample-app.xml" package-file-name="Main">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/system" path-in-package="." />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/src/Frameworks" path-in-package="Frameworks" />
+          </files-to-package>
+          <AirSigningOptions keystore-path="$USER_HOME$/Cert_Provision/Dev_Cert.p12" provisioning-profile-path="$USER_HOME$/Cert_Provision/TestingAppD.mobileprovision" />
+        </packaging-ios>
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="29_0_0_112" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="24d34ae0-cbc1-4ec1-9a3a-d90f4f7e7258" />
+        <CLASSES>
+          <root url="file://$USER_HOME$/Documents/GitHub/Starling-Framework/starling/src" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="2cacb5dc-b358-46dc-8ce1-c075f9bcfd11" />
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Documents/GitHub/AdMob-ANE/native_extension/ane/AdMobANE.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
